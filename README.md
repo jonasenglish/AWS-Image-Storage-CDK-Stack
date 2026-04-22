@@ -6,4 +6,5 @@ This stack can be created using your AWS account after using AWS Configure in a 
 `npm install -g aws-cdk`
 
 Then, navigate to the project folder and run `cdk deploy`.
+The contents of the WebGL folder will need to be manually placed in the WebGL S3 Bucket after deployment.
 After deployment the site will be accessible via the `UnityInfraStack.HostedUiLoginUrl` URL in the deployment outputs.
