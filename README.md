@@ -1,14 +1,3 @@
-# Welcome to your CDK C# project!
+# AWS Image Storage CDK Stack
 
-This is a blank project for CDK development with C#.
-
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
-
-It uses the [.NET CLI](https://docs.microsoft.com/dotnet/articles/core/) to compile and execute your project.
-
-## Useful commands
-
-* `dotnet build src` compile this app
-* `cdk deploy`       deploy this stack to your default AWS account/region
-* `cdk diff`         compare deployed stack with current state
-* `cdk synth`        emits the synthesized CloudFormation template
+This CDK stack utilizes a Unity WebGL Application to facilitate lambda calls for User Image management. Users are managed by the AWS Cognito User Pool service. The Unity WebGL Application project can be found [Here](https://github.com/jonasenglish/S3BucketUpload)
