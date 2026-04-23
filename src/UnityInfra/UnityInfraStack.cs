@@ -40,6 +40,7 @@ public class UnityInfraStack : Stack
 
         _ = new FrontendDeploymentConstruct(this, "Frontend", storage.WebGlBucket, runtimeConfigJson);
 
+        _ = new CfnOutput(this, "WebGLBucketName", new CfnOutputProps { Value = storage.WebGlBucket.BucketName });
         _ = new CfnOutput(this, "WebGLWebsiteUrl", new CfnOutputProps { Value = storage.WebGlBucket.BucketWebsiteUrl });
         _ = new CfnOutput(this, "WebGLHttpsUrl", new CfnOutputProps { Value = webGlHttpsUrl });
         _ = new CfnOutput(this, "HostedUiLoginUrl", new CfnOutputProps { Value = hostedUiLoginUrl });

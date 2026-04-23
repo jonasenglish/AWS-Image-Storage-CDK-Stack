@@ -12,10 +12,11 @@ public sealed class FrontendDeploymentConstruct : Construct
         {
             Sources =
             [
-                // Source.Asset("webgl/unity-webgl.zip"),
+                Source.Asset("webgl/unity-webgl.zip"),
                 Source.Data("runtime-config.json", runtimeConfigJson)
             ],
-            DestinationBucket = webGlBucket
+            DestinationBucket = webGlBucket,
+            MemoryLimit = 2560,
         });
     }
 }
