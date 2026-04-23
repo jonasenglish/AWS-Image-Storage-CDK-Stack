@@ -5,6 +5,6 @@ This CDK stack utilizes a Unity WebGL Application to facilitate lambda calls for
 This stack can be created using your AWS account after using AWS Configure in a CLI of your choice. You will need to have installed Node JS and the AWS CDK. AWS CDK can be installed via the following line:
 `npm install -g aws-cdk`
 
-Then, navigate to the project folder and run `cdk deploy`.
-The contents of the WebGL folder will need to be manually placed in the WebGL S3 Bucket after deployment.
+Then, navigate to the project folder and run `cdk deploy`. The frontend Unity WebGL app is bundled in this [ZIP File](https://github.com/jonasenglish/AWS-Image-Storage-CDK-Stack/blob/main/webgl/unity-webgl.zip) and is uploaded and extracted during deployment.
+
 After deployment the site will be accessible via the `UnityInfraStack.HostedUiLoginUrl` URL in the deployment outputs.
